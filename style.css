@@ -453,6 +453,12 @@ menu .book-call{
     font-size:var(--h4);
 }
 
+.services .book-call{
+    max-width:700px;
+    text-align: center;
+    margin:40px 0 !important;
+    display:block;
+}
 
 
 
