@@ -336,10 +336,12 @@ menu .book-call {
     gap: 20px;
     background: var(--grey);
     color: var(--dark);
+    text-align: center;
 }
 
 .stat-header {
-    font-size: var(--h2);
+    --s: calc(min(max(2.5rem, 6vw), 6.25rem));
+    font-size: var(--s);
     font-weight: 700;
 }
 
@@ -525,7 +527,7 @@ menu .book-call {
 }
 
 .services .services-small-title{
-    font-size:var(--p) !important;
+    font-size:var(--h4) !important;
     color:var(--dark-grey);
     line-height: normal !important;
     letter-spacing:normal !important;
@@ -769,6 +771,10 @@ footer .book-call {
     .mission,
     .testimonials {
         grid-template-columns: 1fr;
+    }
+
+    .services-benefits{
+        gap: 50px;
     }
 
     .mission-text {
