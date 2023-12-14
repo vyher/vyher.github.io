@@ -21,11 +21,11 @@
 
     --title-font:sans-serif !important;
     --text-font:sans-serif;
-    /* --title-font:'Anton', sans-serif !important;
-    --text-font:'Manrope', sans-serif; */
+    /* --title-font:'Anton', sans-serif !important;*/
+    --text-font:'Manrope', sans-serif;
 
     --accent: #91e000;
-    --accent-dark: #1f2f00;
+    --accent-dark: #121C00;
     --accent-light: #ddff9d;
     --dark: #101010;
     --light: #e1e1e1;
@@ -71,7 +71,7 @@ body {
 h1 {
     font-size: var(--h1);
     line-height: 1.0;
-    letter-spacing: -15px;
+    letter-spacing: -8px;
 }
 
 h2 {
@@ -193,13 +193,27 @@ nav {
     z-index: 1;
     top: 0;
     /* mix-blend-mode: difference; */
-    background: var(--dark);
+    /* background: var(--dark); */
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     color:var(--light);
 }
 
 nav .logo {
     font-size: var(--subtitle-size);
     font-family: var(--title-font);
+    display:flex;
+    align-items: center;
+}
+
+nav .logo a{
+    display:flex;
+}
+
+nav .logo img{
+    max-width:80px;
+    width:100%;
 }
 
 nav .links {
@@ -222,7 +236,7 @@ nav .links li:hover {
 }
 
 .book-call {
-    padding: 10px 20px !important;
+    padding: 20px 20px !important;
     margin: 10px 0 10px 0 !important;
     font-size: var(--link-size);
     /* border:1px solid var(--grey) !important; */
@@ -232,7 +246,7 @@ nav .links li:hover {
     border: 1px solid var(--accent) !important;
     background: var(--accent);
     color: var(--dark);
-    border-radius:5px;
+    border-radius:100px;
     font-family:var(--title-font);
     display: inline-block;
 }
@@ -245,13 +259,13 @@ nav .links li:hover {
 }
 
 .secondary-button{
-    padding: 10px 20px !important;
+    padding: 20px 20px !important;
     margin: 10px 0 0 0 !important;
     font-size: var(--p);
-    border:1px solid var(--grey) !important;
+    /* border:1px solid var(--grey) !important; */
     background:#fff;
     cursor: pointer;
-    border-radius:5px;
+    border-radius:100px;
     font-family:var(--title-font);
     display: inline-block;
     text-align: center;
@@ -275,7 +289,7 @@ menu {
     width: 100%;
     padding: 20px 0;
     position: fixed;
-    top: 51px;
+    /* top: 51px; */
     left: 0;
     height: 100vh;
     z-index: 2;
@@ -321,14 +335,14 @@ menu .book-call {
 
 .hero .book-call {
     text-align: center;
-    margin: 0 0 0 0 !important;
+    margin: 0 10px 0 0 !important;
     display:inline-block;
     font-size:var(--p) !important;
 }
 
 .mission {
     /* padding:var(--p100) var(--p40); */
-    border-top: 1px solid var(--grey);
+    /* border-top: 1px solid var(--grey); */
     background: var(--dark);
     color: var(--grey);
     display: grid;
@@ -421,7 +435,7 @@ menu .book-call {
     grid-template-columns: 1fr 1fr;
 }
 .services h2 {
-    padding: 0px 0 200px 0px;
+    padding: 0px 0 20px 0px;
     font-family: var(--title-font);
 }.services h4 {
     font-weight: 300;
@@ -455,6 +469,31 @@ menu .book-call {
 .service-title h4{
     font-weight: 900 !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+.available{
+    background:#fff;
+    color:var(--dark);
+}
+.country{
+    display: inline-block;
+}
+
+
+
+
+
+
+
 
 
 
@@ -501,13 +540,16 @@ menu .book-call {
     color:var(--dark-grey);
 }
 
+
+
 .benefits .secondary-button,
-.mission .secondary-button,
 .testimonials .secondary-button,
-.wy .secondary-button{
-    margin:100px 0 0 0 !important;
+.wy .secondary-button,
+.mission .secondary-button{
+    margin:100px auto 0 auto !important;
     display:block;
     width:100%;
+    max-width:100%;
 }
 
 
@@ -545,7 +587,7 @@ menu .book-call {
 
 .about {
     background: var(--light);
-    color: var(--dark);
+    color: var(--dark); 
 }
 
 .about h1{
@@ -583,6 +625,10 @@ menu .book-call {
 
 .testimonials .testimonial {
     padding: 0 0 100px 0;
+}
+
+.testimonial-text{
+    font-style: italic;
 }
 
 .t1, .t2{
@@ -742,6 +788,7 @@ footer .book-call {
         border: 1px solid var(--accent) !important;
         background: var(--accent);
         color: var(--dark);
+        margin:20px 0 0 0 !important;
     }
 
     nav .menu {
@@ -865,6 +912,21 @@ footer .book-call {
     .secondary-button{
         width:100%;
     }
+
+    .benefits .secondary-button,
+.mission .secondary-button,
+.testimonials .secondary-button,
+.wy .secondary-button{
+    margin:100px 0 0 0 !important;
+    display:block;
+    width:100%;
+    max-width:100%;
+}
+
+nav .logo img{
+    max-width:50px;
+    width:100%;
+}
 
 }
 
