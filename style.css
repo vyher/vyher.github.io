@@ -12,17 +12,25 @@
     --caramel: #956934;
     --almond: #EFC08E;
     --grey:#676767;
+    --light-grey:#b1b1b1;
     --dark:#000;
     --light:#fff;
     --light-accent:hsla(33, 47%, 46%, 0.201);
 
 
     --h1:40px;
-    --h2:19px;
+    --h2:40px;
+    --h3:19px;
     --p: 16px;
     --small:12px;
 
     --max-width:700px;
+
+    --size: clamp(10rem, 1rem + 40vmin, 30rem);
+    --gap: calc(var(--size) / 14);
+    --duration: 60s;
+    --scroll-start: 0;
+    --scroll-end: calc(-100% - var(--gap));
 }
 
 a{
@@ -33,18 +41,28 @@ a{
 html{
     background:var(--light-caramel);
     font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
 }
 
 h1{
-    font-size:var(--h1);
+    font-size:var(--h3);
+    line-height: 119%;
+    letter-spacing: -0.05rem;
+    padding:10px 0;
+    font-weight:700;
+    color:var(--grey);
+}
+
+h2{
+    font-size:var(--h2);
     line-height: 93.9%;
     letter-spacing: -0.07rem;
     font-weight:600;
     animation:slide-up 1s linear forwards;
 }
 
-h2{
-    font-size:var(--h2);
+h3{
+    font-size:var(--h3);
     line-height: 119%;
     letter-spacing: -0.05rem;
     padding:10px 0;
@@ -104,6 +122,10 @@ header{
     max-width:150px;
 }
 
+.option-details-price i{
+    color:var(--caramel);
+}
+
 .option-details-price{
     font-weight:700;
     color:var(--grey);
@@ -117,18 +139,21 @@ header{
     font-size:var(--h1);
     color:var(--light-accent);
 }
+.options h2{
+    font-size:30px;
+}
 
 
 
 
 .links{
     margin:0 auto;
-    display:grid;
+    /* display:grid; */
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding:10vh 0 1vh 0;
+    padding:1vh 0 0vh 0;
 }
 
 .link{
