@@ -163,12 +163,12 @@ header{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding:1vh 0 0vh 0;
+    padding:3vh 0 0vh 0;
 }
 
 .link{
     font-size:var(--p);
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-weight:700;
     padding:20px 40px;
     color:var(--caramel);
