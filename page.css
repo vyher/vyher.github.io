@@ -617,4 +617,8 @@ footer{
         grid-template-columns: 1fr;
         gap:20px;
     }
+    .comments img{
+        object-fit: cover;
+        height: 100px;
+    }
 }
