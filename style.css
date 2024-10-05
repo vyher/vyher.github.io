@@ -10,13 +10,14 @@
 
 :root{
     --light-caramel:#FFFDF5;
-    --caramel: #956934;
+    --caramel: #8c6d47;
     --almond: #EFC08E;
     --grey:#676767;
     --light-grey:#b1b1b1;
     --dark:#000;
     --light:#fff;
     --light-accent:hsla(33, 47%, 46%, 0.201);
+    --light-bg:#fffcf9;
 
 
     --h1:40px;
@@ -40,7 +41,7 @@ a{
 }
 
 html{
-    background:var(--light-caramel);
+    background:var(--light-bg);
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
 }

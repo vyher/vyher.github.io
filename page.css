@@ -1,5 +1,5 @@
 :root{
-    --max-width:1200px;
+    --max-width:1000px;
 }
 
 body{
@@ -79,6 +79,8 @@ nav{
     align-items: center;
     background:#fff;
     box-shadow: 0px 1px 0.3px 0 rgba(171, 122, 62, 0.2);
+    position:relative;
+    z-index:1;
 }
 
 .logo img{
@@ -90,17 +92,66 @@ nav .nav-cta a{
     padding: 10px 15px;
 }
 
-
+.above-the-fold{
+    padding:100px 0 30px 0;
+}
 .above-the-fold .container,
 .above-the-fold .stats{
     position:relative;
     z-index:1;
 }
-.above-the-fold .stats{
-    padding: 50px 0 0 0;
+/* .above-the-fold .container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+} */
+/* .hero-left{
+    text-align: left !important;
+} */
+.stats{
+    padding: 50px 0 0px 0;
+}
+.above-the-fold .bg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    object-fit: cover;
+    z-index:0;
 }
 .above-the-fold h2{
     max-width:450px;
+}
+.above-the-fold .subtitle{
+    max-width:300px;
+    padding:5px 0 20px 0 ;
+    margin:0 auto !important;
+}
+.above-the-fold .primary-button{
+    max-width:200px;
+}
+.opinion{
+    font-family: "Cormorant Garamond";
+    font-style: italic;
+}
+
+.clients{
+    display: flex;
+    margin:10px auto;
+    gap:10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.clients-bubbles-container{
+    /* text-align: right; */
+}
+.clients-bubbles{
+    max-width: 65px;
+}
+.clients-numbers{
+    /* text-align: left; */
+    margin:0 !important;
+    color:var(--grey);
 }
 
 .sub{
@@ -121,7 +172,6 @@ nav .nav-cta a{
     border-radius: 200px;
     background:#fff3e5;
     width:fit-content !important;
-    margin:0 auto;
     color:var(--caramel);
     font-style: italic;
 }
@@ -374,7 +424,7 @@ nav .nav-cta a{
 .list-block-title{
     display:inline-flex;
     gap:10px;
-    background:var(--light-accent);
+    background:hsla(33, 47%, 46%, 0.1);
     padding:5px 10px !important;
     border-radius: 100px;
     margin:5px 0 !important;
@@ -587,7 +637,8 @@ footer{
         margin:0 auto;
     }
     .included .list{
-        display:none;
+        /* display:none; */
+        text-align: center;
     }
     .messages{
         grid-template-columns: 1fr;
