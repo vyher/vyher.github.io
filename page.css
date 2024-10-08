@@ -352,12 +352,11 @@ nav .nav-cta a{
     width:100%;
 }
 
-.testimonial{
-}
-.testimonial h3{
-    max-width:700px;
-    width:90%;
-}
+
+
+
+
+
 
 .included{
     padding:100px 0 0 0;
@@ -386,9 +385,35 @@ nav .nav-cta a{
     font-weight:600;
     
 }
+
+.testimonials{
+}
 .testimonial .title{
     color:var(--caramel);
 }
+.testimonials-block{
+    margin:0 0 50px 0;
+    display:grid;
+}
+.testimonial h3{
+    max-width:700px;
+    width:90%;
+}
+
+.testimonials-3{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:50px;
+}
+.testimonials-2{
+    grid-template-columns: 1fr 1fr;
+    gap:50px;
+}
+
+.testimonials-1{
+    grid-template-columns: 1fr;
+    gap:20px;
+}
+
 .included .title{
     color:#000;
 }
@@ -460,6 +485,15 @@ nav .nav-cta a{
 }
 .faq-box p{
     color:var(--grey);
+}
+
+.faq small{
+    color:var(--grey) !important;
+}
+
+.faq a{
+    color:var(--caramel) !important;
+    text-decoration: underline !important;
 }
 
 .faq-question{
@@ -646,6 +680,12 @@ footer{
     .price{
         padding:0;
     }
+    .testimonials-block{
+        grid-template-columns: 1fr !important;
+        /* gap:20px;
+        margin:0 0 20px 0; */
+    }
+
 }
 @media screen and (max-width:600px) {
     nav{
