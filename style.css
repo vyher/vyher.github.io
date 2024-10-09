@@ -170,7 +170,7 @@ header{
 .links{
     margin:0 auto;
     /* display:grid; */
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -235,6 +235,13 @@ footer{
     }
     .option-details-price{
         padding:5vh 0 0 0;
+    }
+    .links{
+        grid-template-columns: 1fr;
+        gap:20px;
+    }
+    .link{
+        display:block;
     }
 }
 

@@ -213,6 +213,7 @@ nav .nav-cta a{
 .expertise-box-title{
     font-weight:700;
     padding:0 0 5px 0;
+    font-size:30px;
 }
 .expertise-box-subtitle{
     font-size:16px;
@@ -262,29 +263,32 @@ nav .nav-cta a{
     background:#fff3e5;
 }
 .what-you-get-boxes{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:50px;
+
     text-align: left;
 }
 .what-you-get-box{
-    background:#fff;
-    box-shadow: 0 4px 4px 0 rgba(149, 105, 52, 0.05);
-    padding:40px;
+    /* background:#fff;
+    box-shadow: 0 4px 4px 0 rgba(149, 105, 52, 0.05); */
+    padding:10px;
     border-radius: 20px;
+}
+.what-you-get-box-list{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap:10px;
 }
 .what-you-get-box-title{
     font-weight:700;
     padding:0 0 10px 0;
 }
 .what-you-get-box-text{
-    font-size:16px;
+    font-size:20px;
     color:var(--grey);
     padding:0 0 10px 0;
 }
 .what-you-get-box-text i{
     color:var(--caramel) !important;
-    font-weight:900;
 }
 
 
@@ -447,12 +451,20 @@ nav .nav-cta a{
     text-align: left;
 }
 .list-block-title{
-    display:inline-flex;
+    margin:5px 0 !important;
+    display:inline-block;
     gap:10px;
     background:hsla(33, 47%, 46%, 0.1);
-    padding:5px 10px !important;
     border-radius: 100px;
-    margin:5px 0 !important;
+    padding:10px 20px !important;
+}
+
+
+.list-item{
+}
+.list-item-text{
+    font-size:14px;
+    display:none;
 }
 .list h3{
     padding:0;
@@ -685,7 +697,13 @@ footer{
         /* gap:20px;
         margin:0 0 20px 0; */
     }
-
+    .what-you-get-box-list{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .what-you-get-box-text-last{
+        display:none;
+    }
 }
 @media screen and (max-width:600px) {
     nav{
@@ -704,12 +722,11 @@ footer{
     .stat-subtitle{
         font-size:14px;
     }
-    .what-you-get-boxes{
-        grid-template-columns: 1fr;
-        gap:20px;
-    }
     .comments img{
         object-fit: cover;
         height: 100px;
+    }
+    .what-you-get-box-text{
+        font-size:16px;
     }
 }
