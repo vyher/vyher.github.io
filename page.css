@@ -45,7 +45,7 @@ h3{
 }
 
 section{
-    padding:50px 0;
+    padding:80px 0;
 }
 
 section img{
@@ -109,6 +109,11 @@ nav .nav-cta a{
 } */
 .stats{
     padding: 50px 0 0px 0;
+}
+.stats-hero .stat-title{
+    /* color:var(--dark); */
+    font-weight:500;
+    font-size:20px;
 }
 .above-the-fold .bg{
     position:absolute;
@@ -196,7 +201,7 @@ nav .nav-cta a{
 
 
 .expertise{
-    background:#fff3e5;
+    background:#fff8f1;
 }
 .expertise-boxes{
     display:grid;
@@ -209,24 +214,58 @@ nav .nav-cta a{
     box-shadow: 0 4px 4px 0 rgba(149, 105, 52, 0.05);
     padding:40px;
     border-radius: 20px;
+    text-align: center;
 }
 .expertise-box-title{
     font-weight:700;
     padding:0 0 5px 0;
-    font-size:30px;
+    /* font-size:40px; */
+    color:var(--caramel);
 }
 .expertise-box-subtitle{
     font-size:16px;
     color:var(--grey);
 }
+.expertise-icon{
+    color:var(--caramel);
+    font-size:28px;
+    padding:0 0 10px 0;
+}
 
 
+.expertise-ally{
+    background:#fff;
+}
+/* .expertise-ally .title{
+    color:var(--light);
+}
+.expertise-ally .subtitle{
+    color:var(--light-grey);
+} */
+ .expertise-ally .expertise-box{
+    box-shadow: none;
 
+}
+.expertise img{
+    width:100%;
+    object-fit: contain;
+}
+.expertise-stats .expertise-box{
+    background:transparent;
+    box-shadow: none;
+}
+.expertise-stats .expertise-box-title{
+    font-size:38px !important;
+}
+
+.work-together{
+    background:#fff;
+}
 
 .work-together-steps{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap:50px;
+    gap:20px;
 }
 
 .step{
@@ -253,6 +292,9 @@ nav .nav-cta a{
 .step-text{
     font-size:16px;
     color:var(--grey);
+}
+.step-text ol li{
+    text-align: center;
 }
 
 
@@ -379,7 +421,11 @@ nav .nav-cta a{
 .included .primary-button{
     margin:10px auto;
 }
-.included .title, .included h3{
+.included-left h3{
+    text-align: left;
+    margin:0;
+}
+.included .title{
     text-align: left;
     margin:0;
 }
@@ -388,6 +434,26 @@ nav .nav-cta a{
     font-size:28px;
     font-weight:600;
     
+}
+
+.testimonial{
+    padding:70px 0;
+    /* border-top:1px solid var(--light-grey); */
+    /* border-bottom:1px solid var(--almond); */
+}
+
+.testimonial img{
+    max-width:200px;
+    width:100%;
+    margin:0 auto;
+    object-fit: contain;
+}
+
+
+
+.custom-solution{
+    background:transparent !important;
+    box-shadow: none !important;
 }
 
 .testimonials{
@@ -431,12 +497,12 @@ nav .nav-cta a{
 }
 .old-price{
     text-decoration: line-through; 
-    color:var(--light-grey); 
-    transform: scale(0.9);
     display: inline-block;
+    font-size:20px;
 }
 .new-price{
-
+    font-size:24px;
+    font-weight:800;
 }
 .month{
     color:var(--grey);
@@ -445,6 +511,9 @@ nav .nav-cta a{
 
 .comments{
     padding:100px 0 0 0;
+}
+.comments .stats{
+    padding-top:0;
 }
 
 .list{
@@ -699,7 +768,7 @@ footer{
     }
     .what-you-get-box-list{
         display:grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     .what-you-get-box-text-last{
         display:none;
@@ -727,6 +796,13 @@ footer{
         height: 100px;
     }
     .what-you-get-box-text{
-        font-size:16px;
+        font-size:18px;
+    }
+    .stats-hero .stats-container{
+        grid-template-columns: 1fr;
+    }
+    .expertise img{
+        width:100%;
+        object-fit: cover;
     }
 }
